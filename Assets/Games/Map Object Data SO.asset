@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41dbbab889bacbd46841d32477c88c70, type: 3}
+  m_Name: Map Object Data SO
+  m_EditorClassIdentifier: 
+  mapElement:
+  - mapElementID: Cube
+    defaultPrefab: {fileID: 8139897177814102891, guid: 4007d16fa56e98449bc329f0162c7373, type: 3}
+    spawnPoint: {x: 0, y: 0, z: 0}
+    mapVarientList:
+    - variantID: RedCube
+      prefab: {fileID: 8139897177814102891, guid: 4007d16fa56e98449bc329f0162c7373, type: 3}
+    - variantID: GreenCube
+      prefab: {fileID: 6816689307428222675, guid: 79f6732385783894bad0f6decf8f7966, type: 3}
+    - variantID: BlueCube
+      prefab: {fileID: 9116190878009236735, guid: 59ff89f5ed9f1bd4eb0a7035ff353521, type: 3}
+  - mapElementID: Sphere
+    defaultPrefab: {fileID: 1569937623035625018, guid: 64fe020390d51d24ea53c11aa12eaec2, type: 3}
+    spawnPoint: {x: 5, y: 0, z: 0}
+    mapVarientList: []
