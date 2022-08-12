@@ -15,27 +15,12 @@ public class TestAuth : MonoBehaviour
             PlayFabGroupService.Instance.ListPlayerMembership(result =>
             {
                 Debug.Log(result.ToJson());
-                Auto();
             }, error =>
             {
                 Debug.LogError(error.GenerateErrorReport());
             });
         });
 
-    }
-
-    private void Auto()
-    {
-        PlayFabCloudScriptAPI.ExecuteFunction(new PlayFab.CloudScriptModels.ExecuteFunctionRequest
-        {
-            FunctionName = "hello"
-        }, result =>
-        {
-            print(result.FunctionResult.ToString());
-        }, error =>
-        {
-            Debug.LogError(error.GenerateErrorReport());
-        });
     }
 
     private void CreateGroup()
